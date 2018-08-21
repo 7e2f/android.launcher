@@ -8,13 +8,14 @@
         android:label="@string/app_name"
         android:launchMode="singleTask"
         android:stateNotNeeded="true"
-        android:theme="@android:style/Theme.Wallpaper.NoTitleBar">
+        android:theme="@style/launcherTheme">
         <activity
             android:name="org.ch.launcher.HomeScreen"
             android:excludeFromRecents="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:screenOrientation="nosensor">
+            android:screenOrientation="nosensor"
+            android:theme="@style/launcherTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!-- The following two intent-filters are the key to set homescreen -->
@@ -25,3 +26,4 @@
         </activity>
     </application>
 </manifest>
+    <!--android:theme="@android:style/Theme.Wallpaper.NoTitleBar"-->
